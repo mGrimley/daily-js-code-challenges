@@ -61,10 +61,10 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-
-
-
-
+function addTwoNumbers(x, y) {
+  // If x is a number and y is a number, return x + y, else return NaN
+  return !isNaN(x) && !isNaN(y) ? x + y : NaN;
+}
 
 /*-----------------------------------------------------------------
 Challenge: 03-sumNumbers
