@@ -66,6 +66,7 @@ function addTwoNumbers(x, y) {
   return !isNaN(x) && !isNaN(y) ? x + y : NaN;
 }
 
+
 /*-----------------------------------------------------------------
 Challenge: 03-sumNumbers
 
@@ -85,8 +86,9 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-
-
+function sumNumbers(x) {
+  return x.length ? numbers.reduce(function(total, value) { return total + value }) : 0
+}
 
 
 /*-----------------------------------------------------------------
