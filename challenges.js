@@ -143,6 +143,10 @@ computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
 
+function computeRemainder(x, y) {
+  // If y is not zero, return x % y, else return Infinity
+  return y ? x % y : Infinity
+}
 
 
 /*-----------------------------------------------------------------
