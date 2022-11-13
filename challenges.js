@@ -145,7 +145,7 @@ computeRemainder(10.5, 3) //=> 1.5
 
 function computeRemainder(x, y) {
   // If y is not zero, return x % y, else return Infinity
-  return y ? x % y : Infinity
+  return y ? x % y : Infinity;
 }
 
 
@@ -179,9 +179,6 @@ function range(x, y) {
     return "First argument must be less than second";
   }
 }
-  
-  
-  
 
 
 /*-----------------------------------------------------------------
