@@ -87,7 +87,7 @@ sumNumbers([]) //=> 0
 // Your solution for 03-sumNumbers here:
 
 function sumNumbers(x) {
-  return x.length ? numbers.reduce(function(total, value) { return total + value }) : 0
+  return x.length ? numbers.reduce(function(total, value) { return total + value }) : 0;
 }
 
 
@@ -110,7 +110,17 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 
+function add() {
+  let sum = 0;
 
+  if(arguments) {
+    for(let arg of arguments) {
+      sum += arg;
+    }
+  }
+
+  return sum;
+}
 
 
 /*-----------------------------------------------------------------
