@@ -196,7 +196,9 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 -----------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
 
-
+function reverseUpcaseString(s) {
+  return s.toUpperCase().split('').reverse().join('');
+}
 
 
 /*-----------------------------------------------------------------
