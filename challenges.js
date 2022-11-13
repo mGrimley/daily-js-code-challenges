@@ -218,8 +218,9 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-
-
+function removeEnds(s) {
+  return s.length < 3 ? "" : s.slice(1, s.length - 1);
+}
 
 
 /*-----------------------------------------------------------------
