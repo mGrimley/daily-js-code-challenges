@@ -312,16 +312,12 @@ isPalindrome(''); //=> true
 // Your solution for 11-isPalindrome here:
 
 function isPalindrome(s) {
-  if(s.length > 1) {
-    // Remove casing and spaces
-    s = s.toLowerCase().split(' ').join('');
-    // Get the reverse
-    pal = s.split('').reverse().join('');
-    // Compare
-    return s === pal ? true : false;
-  } else {
-    return true;
-  }
+  // Remove casing and spaces
+  s = s.toLowerCase().split(' ').join('');
+  // Get the reverse
+  pal = s.split('').reverse().join('');
+  // If the length of the string is greater than 1, test if teh string is a palindrome, else return true
+  return s.length > 1 ? (s === pal ? true : false) : true;
 }
 
 
