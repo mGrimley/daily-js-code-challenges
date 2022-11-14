@@ -244,8 +244,17 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 -----------------------------------------------------------------*/
 // Your solution for 09-charCount here:
 
+function charCount(s) {
+  s = s.split('');
+  let count = {};
 
-
+  while(s.length) {
+    const char = s.shift();
+    char in count ? count[char]++ : count[char] = 1;
+  }
+  
+  return count;
+}
 
 
 /*-----------------------------------------------------------------
