@@ -384,7 +384,7 @@ function mumble(s) {
   for(let i = 0; i < s.length; i++){
     m.push(s.charAt(i).repeat(i + 1));
   }
-  
+
   return m.join('-');
 }
 
@@ -403,14 +403,19 @@ Prompt:
 Examples:
 
 fromPairs([ ['a', 1], ['b', 2], ['c', 3] ]) //=> { a: 1, b: 2, c: 3 }
-fromPairs([ ['name', 'Sam"], ['age', 24], ['name', 'Sally'] ]) //=> { name: "Sally", age: 24 }
+fromPairs([ ['name', 'Sam'], ['age', 24], ['name', 'Sally'] ]) //=> { name: "Sally", age: 24 }
 -----------------------------------------------------------------*/
 // Your solution for 14-fromPairs here:
 
+function fromPairs(nestedArray) {
+  let newObject = {};
 
+  for(let i = 0; i < nestedArray.length; i++) {
+    newObject[nestedArray[i][0]] = nestedArray[i][1];
+  }
 
-
-
+  return newObject;
+}
 
 
 /*-----------------------------------------------------------------
