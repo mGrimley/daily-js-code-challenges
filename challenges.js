@@ -252,7 +252,7 @@ function charCount(s) {
     const char = s.shift();
     char in count ? count[char]++ : count[char] = 1;
   }
-  
+
   return count;
 }
 
@@ -279,9 +279,15 @@ formatWithPadding(1234, '*', 3); //=> "1234"
 -----------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
 
-
-
-
+function formatWithPadding(num, pad, len) {
+  const totalLength = len - num.toString().length;
+  // console.log(totalLength);
+  // console.log(len - num.toString().length);
+  for(let i = 0; i < totalLength; i++){
+    num = pad + num;
+  }
+  return num;
+}
 
 
 /*-----------------------------------------------------------------
