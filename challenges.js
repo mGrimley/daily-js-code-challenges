@@ -318,6 +318,8 @@ function isPalindrome(s) {
   pal = s.split('').reverse().join('');
   // If the length of the string is greater than 1, test if teh string is a palindrome, else return true
   return s.length > 1 ? (s === pal ? true : false) : true;
+  
+  return s.length > 1 ? (s.toLowerCase().split(' ').join('') === s.toLowerCase().split(' ').join('').split('').reverse().join('') ? true : false) : true;
 }
 
 
@@ -343,9 +345,17 @@ hammingDistance('abc', 'ab'); //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 12-hammingDistance here:
 
-
-
-
+function hammingDistance(s1, s2) {
+  if(s1.length == s2.length) {
+    let total = 0;
+    for(let i = 0; i < s1.length; i++) {
+      s1.charAt(i) != s2.charAt(i) ? total++ : null;
+    }
+    return total;
+  } else {
+    return NaN;
+  }
+}
 
 
 /*-----------------------------------------------------------------
