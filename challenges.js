@@ -311,10 +311,14 @@ isPalindrome(''); //=> true
 -----------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
 
-
-
-
-
+function isPalindrome(s) {
+  // Remove casing and spaces
+  s = s.toLowerCase().split(' ').join('');
+  // Get the reverse
+  pal = s.split('').reverse().join('');
+  // Compare
+  return s === pal ? true : false;
+}
 
 
 /*-----------------------------------------------------------------
