@@ -490,7 +490,7 @@ function findHighestPriced(objectArray) {
       highestIndex = i;
     }
   }
-  return objectArray[highestIndex]
+  return objectArray[highestIndex];
 }
 
 
@@ -521,8 +521,13 @@ mapArray( ['rose', 'tulip', 'daisy'], function(f, i) {
 -----------------------------------------------------------------*/
 // Your solution for 17-mapArray here:
 
-
-
+function mapArray(arr, cb) {
+  newArr = [];
+  for(let i = 0; i < arr.length; i++) {
+    newArr.push(cb(arr[i], i));
+  }
+  return newArr;
+}
 
 
 /*-----------------------------------------------------------------
