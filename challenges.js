@@ -481,11 +481,17 @@ findHighestPriced([
 -----------------------------------------------------------------*/
 // Your solution for 16-findHighestPriced here:
 
-
-  
-
-
-
+function findHighestPriced(objectArray) {
+  let highestIndex = 0;
+  let highestPrice = 0;
+  for(let i = 0; i < objectArray.length; i++) {
+    if(objectArray[i].price > highestPrice) {
+      highestPrice = objectArray[i].price;
+      highestIndex = i;
+    }
+  }
+  return objectArray[highestIndex]
+}
 
 
 /*-----------------------------------------------------------------
