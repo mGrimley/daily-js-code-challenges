@@ -630,7 +630,11 @@ isPrime(200) //=> false
 -----------------------------------------------------------------*/
 // Your solution for 20-isPrime here:
 
-
+function isPrime(x) {
+  for(let i = 2; i <= x; i++) {
+    if(x % i != 0) return false
+  }
+}
   
 
 
